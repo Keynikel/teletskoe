@@ -8,7 +8,7 @@ html(class="no-js  page", lang="ru")
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
     block meta
-      title Home
+      title Title
 
     block head
       link(rel="stylesheet", href="css/style.css")
@@ -17,16 +17,7 @@ html(class="no-js  page", lang="ru")
         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
   body
-    .page__inner
-      .page__content
-
-        div Тут «шапка»
-          block nav
-
-        block content
-
-      .page__footer-wrapper
-        div Тут «подвал»
-
-    block page-bottom
+    block header
+    block page
+    block footer
       script(src="js/script.min.js")
