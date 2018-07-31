@@ -1,8 +1,12 @@
-// В этом файле должны быть стили для БЭМ-блока footer, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока footer, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .footer {
+  min-height: 125px;
+  background-color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   $block-name:                &; // #{$block-name}__element
 
