@@ -1,20 +1,32 @@
-$main-color:          #7DCBCF; // green
-$main-color-dark:     #4AA2A5; // green dark
-$second-color:        #1F2455; // magenta
-$second-color-light:  #6A4099; // magenta light
-$warning-color:       #FDC05D; // orange
- 
-$gray-light:          #F2F2F2; 
-$gray-dark:           #231F20; 
+$text-color:          #000;
 
-$text-color:          $gray-dark;
+$main-color:          #EE0000;
 
-$font-family:         -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+$font-family:         -apple-system, Sans_PT, sans-serif;
+$font-family--header: -apple-system, Kelson, sans-serif;
 $font-size:           14px;
 $line-height:         1.4;
+$font-size--s:        13px;
+$font-size--m:        20px;
+$font-size--l:        35px;
 
-$screen-xs:           480px;
+$screen-xs:           320px;
 $screen-sm:           768px;
-$screen-md:           992px;
 $screen-lg:           1200px;
 $screen-xl:           1920px;
+
+
+body {
+  max-width: $screen-xs;
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
