@@ -1,3 +1,6 @@
+body {
+  max-width: 800px; }
+
 .visually_hidden {
   position: absolute;
   width: 1px;
@@ -30,19 +33,19 @@
   font-display: swap; }
 
 .chrome {
-  background-image: url(../img/sprite-022362861071524764.png);
+  background-image: url(../img/sprite-09944538589454563.png);
   background-position: 0px 0px;
   width: 64px;
   height: 64px; }
 
 .github-logo {
-  background-image: url(../img/sprite-022362861071524764.png);
+  background-image: url(../img/sprite-09944538589454563.png);
   background-position: -68px 0px;
   width: 64px;
   height: 64px; }
 
 .placeholder {
-  background-image: url(../img/sprite-022362861071524764.png);
+  background-image: url(../img/sprite-09944538589454563.png);
   background-position: 0px -68px;
   width: 64px;
   height: 64px; }
@@ -128,11 +131,7 @@ img {
     width: 240px;
     height: 74px;
     margin: 0;
-    padding: 0;
-    background-image: url("../img/logo--header.svg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain; }
+    padding: 0; }
   .header__wrapper {
     min-width: 280px;
     max-width: 560px;
@@ -204,6 +203,7 @@ img {
     margin-left: auto;
     margin-right: auto; }
     .rooms .room__title {
+      font-family: -apple-system, Kelson, sans-serif;
       position: relative;
       margin: 0;
       padding-bottom: 17px;
@@ -374,5 +374,36 @@ img {
   background-color: #000;
   padding-top: 20px;
   padding-bottom: 20px; }
+
+@media (min-width: 800px) {
+    .header {
+      background-image: url("../img/bg--header-mid.png"); }
+      .header__logo {
+        width: 321px;
+        height: 97px; }
+      .header__wrapper {
+        padding-top: 162px;
+        padding-left: 16px; }
+      .header__subtitle {
+        padding-top: 45px; }
+    .rooms {
+      padding-top: 67px; }
+      .rooms__title {
+        padding-bottom: 6px; }
+      .rooms__item {
+        padding-top: 75px; }
+        .rooms .room__title {
+          font-size: 25px;
+          padding-bottom: 7px; }
+        .rooms .room__pic {
+          width: 500px; }
+        .rooms .room__subtitle {
+          min-width: 280px;
+          max-width: 340px;
+          margin-top: 30px; }
+    .restaurant {
+      background-image: url("../img/bg--restaurant-mid.png");
+      min-height: 499px;
+      padding-top: 126px; } }
 
 /*# sourceMappingURL=style.css.map */

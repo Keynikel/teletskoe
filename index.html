@@ -16,7 +16,9 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <div class="header__logo"></div>
+      <svg class="header__logo" width="240" height="74">
+        <use xlink:href="img/sprite-svg.svg#logo--header"></use>
+      </svg>
       <h1 class="header__title visually_hidden">Шале Телецкое</h1>
       <h2 class="header__subtitle">Добро пожаловать в место, где комфорт пятизвездочного отеля сочетается с нетронутой природой Алтая. Уютные дома, ледяное озеро, чистый воздух и вид на горы — все для настоящего отдыха.</h2>
     </div>
@@ -26,7 +28,9 @@
     <p class="rooms__subtitle">Шале из кедрового массива для семейного отдыха, коттедж для шумной компании или роскошный отдельный номер, чтобы никто не мешал — каждый найдет свое.</p>
     <ul class="rooms__list">
       <li class="rooms__item rooms__item room room--family">
-        <h3 class="room__title">Шале Семейный</h3><img class="room__pic" src="img/family.jpg" width="340" height="227" />
+        <h3 class="room__title">Шале Семейный</h3>
+        <picture>
+          <source media="(min-width:447px)" srcset="img/family--md.png" /><img class="room__pic" src="img/family.jpg" width="340" height="227" /></picture>
         <p class="room__subtitle">Уютный семейный дом из кедра с отдельной спальней.</p>
       </li>
       <li class="rooms__item rooms__item room--kedr">
