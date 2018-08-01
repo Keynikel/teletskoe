@@ -5,7 +5,9 @@ mixin rooms()
     ul.rooms__list
       li.rooms__item.rooms__item.room.room--family
         h3.room__title Шале Семейный
-        img.room__pic(src='img/family.jpg' width='340' height='227')
+        picture
+          source(media='(min-width:447px)' srcset='img/family--md.png')
+          img.room__pic(src='img/family.jpg' width='340' height='227')
         p.room__subtitle Уютный семейный дом из кедра с отдельной спальней.
       li.rooms__item.rooms__item.room--kedr
         h3.room__title Люкс Кедровый

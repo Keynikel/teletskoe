@@ -8,17 +8,18 @@ $font-size:           14px;
 $line-height:         1.4;
 $font-size--s:        13px;
 $font-size--m:        20px;
+$font-size--m1:       25px;
 $font-size--m2:       30px;
 $font-size--l:        35px;
 
 $screen-xs:           320px;
-$screen-sm:           768px;
+$screen-md:           800px;
 $screen-lg:           1200px;
 $screen-xl:           1920px;
 
 
 body {
-  //max-width: $screen-xs;
+  max-width: $screen-md;
 }
 
 .visually_hidden {

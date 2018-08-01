@@ -11,6 +11,12 @@
   background-size: cover;
   color: #fff;
 
+  @media (min-width: $screen-md) {
+    background-image: url('../img/bg--restaurant-mid.png');
+    min-height: 499px;
+    padding-top: 126px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__title {
