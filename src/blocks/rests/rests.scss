@@ -9,6 +9,10 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (min-width: $screen-md) {
+    padding-top: 80px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__title {
@@ -21,6 +25,12 @@
     text-align: center;
     padding-bottom: 5px;
 
+    @media (min-width: $screen-md) {
+      font-size: 33px;
+      padding-left: 18px;
+      padding-bottom: 4px;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -30,6 +40,10 @@
       width: 80px;
       height: 2px;
       background-color: $main-color;
+
+      @media (min-width: $screen-md) {
+        margin-left: -30px;
+      }
     }
   }
 
@@ -48,41 +62,41 @@
     margin: 0;
     padding: 0;
     list-style: none;
-  }
 
+    @media (min-width: $screen-md) {
+      padding-left: 40px;
+      padding-top: 18px;
+    }
+  }
   &__item {
-    position: relative;
+    max-width: 530px;
     min-height: 240px;
     margin-bottom: 95px;
+    position: relative;
 
-    &--first {
-      background-image: url('../img/rest1.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    @media (min-width: $screen-md) {
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    &--second {
-      background-image: url('../img/rest2.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &--third {
-      background-image: url('../img/rest2.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
   }
 
   .rest {
+
+    &__pic{
+      width: auto;
+      max-height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+
     &__wrapper {
       width: 50%;
-      height: 50%;
       min-width: 240px;
-      min-height: 150px;
+      max-width: 470px;
+      height: 150px;
       padding: 16px 10px 15px;
       margin: auto;
       margin-bottom: 75px;
@@ -92,6 +106,7 @@
       bottom: -50%;
       right: 0;
       background-color: rgba(255,255,255,0.9);
+
     }
 
     &__title {
