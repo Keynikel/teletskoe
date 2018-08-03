@@ -3,15 +3,24 @@ mixin rests()
     h2.rests__title Активный отдых
     p.rests__subtitle Лучше гор —только горы. К счастью, на них можно не только смотреть: мы продумали пешие походы, сплавы по бурным рекам, катание на собачьих упряжках и другие развлечения, которые вы точно запомните.
     ul.rests__list
-      li.rests__item.rests__item--first
+      li.rests__item
+        picture
+          source(media='(min-width:447px)' srcset='img/splav.png')
+          img.rest__pic(src='img/splav.png' width='340' height='227')
         div.rest__wrapper
-          h3.rest__title СПЛАВ НА БАЙДАРКАХ
-          p.rest__lead Вас ждет нетронутый уголок природы, чистейший воздух и незабываемый вид на вершины.
-      li.rests__item.rests__item--second
+          h3.rest__title Сплав на плотах
+          p.rest__lead Экстремальный отдых на горных реках для тех, кто силен духом. 
+      li.rests__item
+        picture
+          source(media='(min-width:447px)' srcset='img/pohod.png')
+          img.rest__pic(src='img/pohod.png' width='340' height='227')
         div.rest__wrapper
           h3.rest__title ПЕШИЙ ПОХОД В ГОРЫ
           p.rest__lead Вас ждет нетронутый уголок природы, чистейший воздух и незабываемый вид на вершины.
-      li.rests__item.rests__item--third
+      li.rests__item
+        picture
+          source(media='(min-width:447px)' srcset='img/fishing.png')
+          img.rest__pic(src='img/fishing.png' width='340' height='227')
         div.rest__wrapper
           h3.rest__title ПЕШИЙ ПОХОД В ГОРЫ
           p.rest__lead Вас ждет нетронутый уголок природы, чистейший воздух и незабываемый вид на вершины.
