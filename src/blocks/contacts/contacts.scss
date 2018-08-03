@@ -4,10 +4,11 @@
 
 .contacts {
   padding-top: 55px;
-  padding-bottom: 118px;
+  padding-bottom: 95px;
 
   @media (min-width: $screen-md) {
     font-size: 25px;
+    padding-bottom: 118px;
   }
 
   $block-name:                &; // #{$block-name}__element

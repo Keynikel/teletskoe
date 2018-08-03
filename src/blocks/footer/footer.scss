@@ -5,9 +5,35 @@
 .footer {
   min-height: 125px;
   background-color: #000;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
 
   $block-name:                &; // #{$block-name}__element
 
+
+  &__reserve {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 1.5;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__copy {
+    margin: 0;
+    margin-top: -3px;
+    font-size: 11px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+  }
 }
