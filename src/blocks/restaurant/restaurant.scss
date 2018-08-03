@@ -14,7 +14,7 @@
   @media (min-width: $screen-md) {
     background-image: url('../img/bg--restaurant-mid.png');
     min-height: 499px;
-    padding-top: 126px;
+    padding-top: 117px;
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -28,6 +28,11 @@
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 1px;
+
+    @media (min-width: $screen-md) {
+      font-size: 35px;
+      padding-bottom: 4px;
+    }
 
     &::after {
       content: '';
@@ -54,5 +59,12 @@
     font-size: $font-size--s;
     line-height: 1.55;
     text-align: center;
+    font-weight: 400;
+
+    @media (min-width: $screen-md) {
+      margin-top: 34px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
   }
 }
