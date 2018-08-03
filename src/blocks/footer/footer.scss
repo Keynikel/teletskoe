@@ -21,12 +21,23 @@
     justify-content: space-between;
   }
 
+  @media (min-width: $screen-lg) {
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__logo {
     @media (min-width: $screen-md) {
       width: 133px;
       height: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 148px;
+      height: 45px;
     }
   }
 
@@ -39,6 +50,10 @@
     @media (min-width: $screen-md) {
       margin-top: 0;
       font-size: 13px;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 15px;
     }
 
     a {
@@ -63,6 +78,10 @@
         width: 82px;
         height: 29px;
       }
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 15px;
     }
   }
 }

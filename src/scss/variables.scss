@@ -14,12 +14,12 @@ $font-size--l:        35px;
 
 $screen-xs:           320px;
 $screen-md:           800px;
-$screen-lg:           1200px;
-$screen-xl:           1920px;
+$screen-lg:           1000px;
+$screen-xl:           1440px;
 
 
 body {
-  max-width: $screen-md;
+  max-width: $screen-xl;
 }
 
 .visually_hidden {
