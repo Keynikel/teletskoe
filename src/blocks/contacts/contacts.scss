@@ -1,0 +1,91 @@
+// В этом файле должны быть стили для БЭМ-блока contacts, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts {
+  padding-top: 41px;
+  padding-bottom: 135px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, Kelson, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      margin-left: -20px;
+      bottom: 0;
+      width: 40px;
+      height: 2px;
+      background-color: #EE0000;
+    }
+  }
+
+  &__text {
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-height: 210px;
+    background-image: url('../img/map.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  &__distance {
+
+    h4 {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.6;
+      font-weight: 400;
+      text-align: center;
+      padding-bottom: 12px;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+      font-size: 12px;
+      line-height: 2;
+      font-style: italic;
+      color: #959595;
+    }
+  }
+
+  &__reserve {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 13px;
+    text-align: center;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+}
