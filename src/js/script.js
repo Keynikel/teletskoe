@@ -1,7 +1,13 @@
 svg4everybody(); // иницализация полифила для IE
 
 $(document).ready(function(){
-  // весь ваш код c jQuery
+  $('.room').hover(function() {
+    $(this).addClass('showed');
+},
+function() {
+    $(this).removeClass('showed');
+}
+);
 });
 
 // Если на проекте нет jQuery, но хочется $( document ).ready... (IE9+)

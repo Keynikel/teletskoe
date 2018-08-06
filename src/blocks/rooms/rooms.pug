@@ -4,32 +4,45 @@ mixin rooms()
     p.rooms__subtitle Шале из кедрового массива для семейного отдыха, коттедж для шумной компании или роскошный отдельный номер, чтобы никто не мешал — каждый найдет свое.
     ul.rooms__list
       li.rooms__item.rooms__item.room.room--family
+        div.room__wrapper
+          picture
+            source(media='(max-width:999px)' srcset='img/family--md.png')
+            source(media='(max-width:1440px)' srcset='img/family--lg.png')
+            source(media='(max-width:6000px)' srcset='img/family--xl.png')
+            img.room__pic(src='img/family.png' width='340' height='227')
         h3.room__title Шале Семейный
-        picture
-          source(media='(min-width:668px)' srcset='img/family--md.png')
-          img.room__pic(src='img/family.png' width='340' height='227')
-        p.room__subtitle Уютный семейный дом из кедра с отдельной спальней.
-      li.rooms__item.rooms__item.room--kedr
-        h3.room__title Люкс Кедровый
-        picture
-          source(media='(min-width:668px)' srcset='img/kedr--md.png')
-          img.room__pic(src='img/kedr.png' width='340' height='227')
-        p.room__subtitle Двухуровневый номер с панорамными окнами и видом на озеро.
-      li.rooms__item.rooms__item.room--kedr-half
+        p.room__subtitle.room__subtitle--md Уютный семейный дом из кедра с отдельной спальней
+      li.rooms__item.rooms__item.room.room--kedr
+        div.room__wrapper
+          picture
+            source(media='(max-width:999px)' srcset='img/kedr--md.png')
+            source(media='(max-width:1440px)' srcset='img/kedr--lg.png')
+            source(media='(max-width:6000px)' srcset='img/kedr--xl.png')
+            img.room__pic(src='img/kedr.png' width='340' height='227')
+        h3.room__title.room__title--long Люкс Кедровый
+        p.room__subtitle.room__subtitle--sm Двухуровневый номер с панорамными окнами и видом на озеро
+      li.rooms__item.rooms__item.room.room--kedr-half
+        div.room__wrapper
+          picture
+            source(media='(max-width:999px)' srcset='img/kedr-half--md.png')
+            source(media='(max-width:1440px)' srcset='img/kedr-half--lg.png')
+            source(media='(max-width:6000px)' srcset='img/kedr-half--xl.png')
+            img.room__pic.room__pic--sm(src='img/kedr-half.png' width='340' height='227')
         h3.room__title Полулюкс Кедровый
-        picture
-          source(media='(min-width:668px)' srcset='img/kedr-half--md.png')
-          img.room__pic.room__pic--sm(src='img/kedr-half.png' width='340' height='227')
-        p.room__subtitle Просторный двухкомнатный номер в комфортном коттедже.
-      li.rooms__item.rooms__item.room--lux
-        h3.room__title.room__title--lux Люкс
-        picture
-          source(media='(min-width:668px)' srcset='img/lux--md.png')
-          img.room__pic(src='img/lux.png' width='340' height='227')
-        p.room__subtitle Роскошный двухкомнатный номер с балконом и панорамным окном.
-      li.rooms__item.rooms__item.room--std
+        p.room__subtitle.room__subtitle--md  Просторный двухкомнатный номер в комфортном коттедже
+      li.rooms__item.rooms__item.room.room--lux
+        div.room__wrapper
+          picture
+            source(media='(max-width:999px)' srcset='img/lux--md.png')
+            source(media='(max-width:4138px)' srcset='img/lux--lg.png')
+            img.room__pic(src='img/lux.png' width='340' height='227')
+        h3.room__title.room__title--lux Люкс в гостиничном комплексе
+        p.room__subtitle.room__subtitle--lg Роскошный двухкомнатный номер с балконом и панорамным окном
+      li.rooms__item.rooms__item.room.room--std
+        div.room__wrapper
+          picture
+            source(media='(max-width:999px)' srcset='img/standart--md.png')
+            source(media='(max-width:4138px)' srcset='img/std--lg.png')
+            img.room__pic(src='img/standart.png' width='340' height='227')
         h3.room__title.room__title--std Стандарт
-        picture
-          source(media='(min-width:668px)' srcset='img/standart--md.png')
-          img.room__pic(src='img/standart.png' width='340' height='227')
-        p.room__subtitle Минималистичный номер с террасой в гостиничном корпусе.
+        p.room__subtitle.room__subtitle--sm Минималистичный номер с террасой в гостиничном корпусе
