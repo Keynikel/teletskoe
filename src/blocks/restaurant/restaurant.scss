@@ -23,6 +23,11 @@
     padding-top: 200px;
   }
 
+  @media (min-width: $screen-xl) {
+    min-height: 800px;
+    padding-top: 217px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__title {
@@ -55,6 +60,11 @@
       width: 80px;
       height: 2px;
       background-color: $main-color;
+
+      @media (min-width: $screen-xl) {
+        margin-left: -50px;
+        width: 100px;
+      }
     }
   }
 
@@ -86,6 +96,10 @@
       line-height: 1.7;
       margin-left: 23%;
       margin-right: 23%;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-top: 40px;
     }
   }
 }

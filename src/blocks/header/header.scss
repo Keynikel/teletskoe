@@ -18,6 +18,10 @@
     background-image: url('../img/bg--header-lg.png');
   }
 
+  @media (min-width: $screen-xl) {
+    min-height: 900px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__logo {
@@ -34,6 +38,12 @@
     @media (min-width: $screen-lg) {
       width: 420px;
       height: 127px;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 439px;
+      height: 133px;
+      margin-left: 8px;
     }
   }
 
@@ -58,6 +68,10 @@
       max-width: none;
       padding-top: 287px;
       padding-left: 17px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 410px;
     }
   }
 
@@ -84,6 +98,10 @@
       padding-top: 48px;
       font-size: 18px;
       line-height: 1.7;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 64px;
     }
   }
 

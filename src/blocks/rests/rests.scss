@@ -12,11 +12,20 @@
   @media (min-width: $screen-md) {
     padding-top: 56px;
     padding-bottom: 64px;
+    background-image: url('../img/bg--rest-md.png');
+    background-position: bottom;
   }
 
   @media (min-width: $screen-lg) {
     padding-top: 88px;
     padding-bottom: 82px;
+
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: 125px;
+    background-image: url('../img/bg--rest-lg.png');
+    background-position: bottom;
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -44,6 +53,12 @@
       padding-bottom: 13px;
     }
 
+    @media (min-width: $screen-xl) {
+      font-size: 35px;
+      margin-left: -3px;
+      padding-bottom: 19px;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -53,6 +68,11 @@
       width: 80px;
       height: 2px;
       background-color: $main-color;
+
+      @media (min-width: $screen-xl) {
+        margin-left: -50px;
+        width: 100px;
+      }
     }
   }
 
@@ -78,6 +98,12 @@
       max-width: unset;
       margin-left: 20%;
       margin-right: 20%;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 31px;
+      margin-left: 25%;
+      margin-right: 25%;
     }
   }
 
@@ -115,6 +141,14 @@
     @media (min-width: $screen-lg) {
       margin-bottom: 36px;
     }
+
+    @media (min-width: $screen-xl) {
+      max-width: 1210px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-top: 58px;
+    }
   }
 
 
@@ -133,6 +167,11 @@
       @media (min-width: $screen-lg) {
         width: 500px;
         max-width: 1000px;
+      }
+
+      @media (min-width: $screen-xl) {
+        width: 630px;
+        max-width: 1200px;
       }
     }
 
@@ -161,6 +200,13 @@
         margin-left: -50px;
         padding: 60px 60px 50px;
       }
+
+      @media (min-width: $screen-xl) {
+        padding-top: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        height: 300px;
+      }
     }
 
     &__title {
@@ -181,6 +227,10 @@
         font-size: 23px;
       }
 
+      @media (min-width: $screen-xl) {
+        font-size: 27px;
+      }
+
       &::after {
         content: '';
         position: absolute;
@@ -190,6 +240,11 @@
         width: 60px;
         height: 2px;
         background-color: $main-color;
+
+        @media (min-width: $screen-xl) {
+          margin-left: -50px;
+          width: 100px;
+        }
       }
     }
 
@@ -204,6 +259,11 @@
       @media (min-width: $screen-md) {
         font-size: 13px;
         line-height: 1.6;
+      }
+
+      @media (min-width: $screen-xl) {
+        padding-top: 35px;
+        font-size: 16px
       }
     }
   }
