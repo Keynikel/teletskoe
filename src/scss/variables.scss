@@ -16,10 +16,14 @@ $screen-xs:           320px;
 $screen-md:           800px;
 $screen-lg:           1000px;
 $screen-xl:           1440px;
+$screen-xxl:          1920px;
 
 
 body {
-  max-width: $screen-xl;
+  min-width: $screen-xs;
+  max-width: $screen-xxl;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .visually_hidden {

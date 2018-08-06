@@ -16,6 +16,10 @@
     padding-bottom: 114px;
   }
 
+  @media (min-width: $screen-xl) {
+    padding-bottom: 174px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__title {
@@ -37,6 +41,10 @@
       font-size: 38px;
       line-height: 0.8;
       padding-bottom: 13px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 35px;
     }
 
     &::after {
@@ -90,19 +98,68 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+
+
     @media (min-width: $screen-md) {
+      position: relative;
       width: 680px;
       margin-left: auto;
       margin-right: auto;
       min-height: 322px;
       background-image: url('../img/map--md.png');
+
+      .ymaps-2-1-68-map {
+        height: 320px !important;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 520px;
+        height: 210px;
+        bottom: -20px;
+        left: -20px;
+        border: 2px solid $main-color;
+        z-index: -1;
+
+        @media (min-width: $screen-xl) {
+          bottom: -108px;
+          left: -30px;
+        }
+      }
     }
 
     @media (min-width: $screen-lg) {
       margin-top: 47px;
       margin-bottom: 36px;
       background-image: url('../img/map--lg.png');
+
+      &:after {
+        width: 530px;
+        height: 245px;
+        bottom: -30px;
+        left: -30px;
+      }
     }
+
+    @media (min-width: $screen-xl) {
+      width: 760px;
+      margin-top: 47px;
+      margin-bottom: 147px;
+      background-image: url('../img/map--lg.png');
+
+      .ymaps-2-1-68-map {
+        height: 400px !important;
+      }
+
+      &:after {
+        width: 590px;
+        height: 315px;
+        bottom: -40px;
+        left: -40px;
+      }
+    }
+
   }
 
 

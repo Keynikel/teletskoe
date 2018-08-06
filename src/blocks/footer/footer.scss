@@ -27,6 +27,11 @@
     padding-right: 70px;
   }
 
+  @media (min-width: $screen-xl) {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__logo {
