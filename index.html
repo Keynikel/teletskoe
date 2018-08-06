@@ -28,34 +28,52 @@
     <p class="rooms__subtitle">Шале из кедрового массива для семейного отдыха, коттедж для шумной компании или роскошный отдельный номер, чтобы никто не мешал — каждый найдет свое.</p>
     <ul class="rooms__list">
       <li class="rooms__item rooms__item room room--family">
+        <div class="room__wrapper">
+          <picture>
+            <source media="(max-width:999px)" srcset="img/family--md.png" />
+            <source media="(max-width:1440px)" srcset="img/family--lg.png" />
+            <source media="(max-width:6000px)" srcset="img/family--xl.png" /><img class="room__pic" src="img/family.png" width="340" height="227" /></picture>
+        </div>
         <h3 class="room__title">Шале Семейный</h3>
-        <picture>
-          <source media="(min-width:668px)" srcset="img/family--md.png" /><img class="room__pic" src="img/family.png" width="340" height="227" /></picture>
-        <p class="room__subtitle">Уютный семейный дом из кедра с отдельной спальней.</p>
+        <p class="room__subtitle room__subtitle--md">Уютный семейный дом из кедра с отдельной спальней</p>
       </li>
-      <li class="rooms__item rooms__item room--kedr">
-        <h3 class="room__title">Люкс Кедровый</h3>
-        <picture>
-          <source media="(min-width:668px)" srcset="img/kedr--md.png" /><img class="room__pic" src="img/kedr.png" width="340" height="227" /></picture>
-        <p class="room__subtitle">Двухуровневый номер с панорамными окнами и видом на озеро.</p>
+      <li class="rooms__item rooms__item room room--kedr">
+        <div class="room__wrapper">
+          <picture>
+            <source media="(max-width:999px)" srcset="img/kedr--md.png" />
+            <source media="(max-width:1440px)" srcset="img/kedr--lg.png" />
+            <source media="(max-width:6000px)" srcset="img/kedr--xl.png" /><img class="room__pic" src="img/kedr.png" width="340" height="227" /></picture>
+        </div>
+        <h3 class="room__title room__title--long">Люкс Кедровый</h3>
+        <p class="room__subtitle room__subtitle--sm">Двухуровневый номер с панорамными окнами и видом на озеро</p>
       </li>
-      <li class="rooms__item rooms__item room--kedr-half">
+      <li class="rooms__item rooms__item room room--kedr-half">
+        <div class="room__wrapper">
+          <picture>
+            <source media="(max-width:999px)" srcset="img/kedr-half--md.png" />
+            <source media="(max-width:1440px)" srcset="img/kedr-half--lg.png" />
+            <source media="(max-width:6000px)" srcset="img/kedr-half--xl.png" /><img class="room__pic room__pic--sm" src="img/kedr-half.png" width="340" height="227" /></picture>
+        </div>
         <h3 class="room__title">Полулюкс Кедровый</h3>
-        <picture>
-          <source media="(min-width:668px)" srcset="img/kedr-half--md.png" /><img class="room__pic room__pic--sm" src="img/kedr-half.png" width="340" height="227" /></picture>
-        <p class="room__subtitle">Просторный двухкомнатный номер в комфортном коттедже.</p>
+        <p class="room__subtitle room__subtitle--md"> Просторный двухкомнатный номер в комфортном коттедже</p>
       </li>
-      <li class="rooms__item rooms__item room--lux">
-        <h3 class="room__title room__title--lux">Люкс</h3>
-        <picture>
-          <source media="(min-width:668px)" srcset="img/lux--md.png" /><img class="room__pic" src="img/lux.png" width="340" height="227" /></picture>
-        <p class="room__subtitle">Роскошный двухкомнатный номер с балконом и панорамным окном.</p>
+      <li class="rooms__item rooms__item room room--lux">
+        <div class="room__wrapper">
+          <picture>
+            <source media="(max-width:999px)" srcset="img/lux--md.png" />
+            <source media="(max-width:4138px)" srcset="img/lux--lg.png" /><img class="room__pic" src="img/lux.png" width="340" height="227" /></picture>
+        </div>
+        <h3 class="room__title room__title--lux">Люкс в гостиничном комплексе</h3>
+        <p class="room__subtitle room__subtitle--lg">Роскошный двухкомнатный номер с балконом и панорамным окном</p>
       </li>
-      <li class="rooms__item rooms__item room--std">
+      <li class="rooms__item rooms__item room room--std">
+        <div class="room__wrapper">
+          <picture>
+            <source media="(max-width:999px)" srcset="img/standart--md.png" />
+            <source media="(max-width:4138px)" srcset="img/std--lg.png" /><img class="room__pic" src="img/standart.png" width="340" height="227" /></picture>
+        </div>
         <h3 class="room__title room__title--std">Стандарт</h3>
-        <picture>
-          <source media="(min-width:668px)" srcset="img/standart--md.png" /><img class="room__pic" src="img/standart.png" width="340" height="227" /></picture>
-        <p class="room__subtitle">Минималистичный номер с террасой в гостиничном корпусе.</p>
+        <p class="room__subtitle room__subtitle--sm">Минималистичный номер с террасой в гостиничном корпусе</p>
       </li>
     </ul>
   </section>
@@ -101,7 +119,10 @@
       </p>
       <p> пос. Артыбаш, ул. Телецкая, 68</p>
     </div>
-    <div class="contacts__map"></div>
+    <div class="contacts__map">
+      <script type="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abf4f28b09063ebe2cf67bb9b04ee86b47646c4a9e6932c536f25190164580172&amp;amp;width=100%25&amp;amp;height=240&amp;amp;lang=ru_RU&amp;amp;scroll=true"></script>
+      <script type="text/javascript" charset="utf-8" async src=""></script>
+    </div>
     <div class="contacts__distance">
       <h4>Расстояние до «Шале Телецкое»</h4>
       <p>от аэропорта г. Горно-Алтайск — 160 км</p>
@@ -120,6 +141,7 @@
         <use xlink:href="img/sprite-svg.svg#media-bay"></use>
       </svg>
     </p>
+    <script src="js/script.min.js"></script>
   </footer>
 </body>
 
