@@ -43,19 +43,19 @@ body {
   font-display: swap; }
 
 .chrome {
-  background-image: url(../img/sprite-09518404990996385.png);
+  background-image: url(../img/sprite-02715237804206396.png);
   background-position: 0px 0px;
   width: 64px;
   height: 64px; }
 
 .github-logo {
-  background-image: url(../img/sprite-09518404990996385.png);
+  background-image: url(../img/sprite-02715237804206396.png);
   background-position: -68px 0px;
   width: 64px;
   height: 64px; }
 
 .placeholder {
-  background-image: url(../img/sprite-09518404990996385.png);
+  background-image: url(../img/sprite-02715237804206396.png);
   background-position: 0px -68px;
   width: 64px;
   height: 64px; }
@@ -190,6 +190,8 @@ img {
       width: 80px;
       height: 2px;
       background-color: #EE0000; }
+    .rooms__title--lux {
+      top: 180px; }
   .rooms__subtitle {
     margin: 0;
     padding: 0;
@@ -969,6 +971,28 @@ img {
         .rooms .room--kedr-half img.room__pic {
           width: 460px;
           height: 580px; }
+      .rooms .room--lux:after {
+        width: 490px;
+        height: 680px; }
+      .rooms .room--lux {
+        width: 560px;
+        height: 810px;
+        top: 144px;
+        right: 70px; }
+        .rooms .room--lux img.room__pic {
+          width: 560px;
+          height: 810px; }
+      .rooms .room--std:after {
+        width: 490px;
+        height: 242px; }
+      .rooms .room--std {
+        width: 560px;
+        height: 360px;
+        top: 995px;
+        right: 70px; }
+        .rooms .room--std img.room__pic {
+          width: 560px;
+          height: 360px; }
         .rooms .room__title {
           padding-bottom: 10px;
           top: 98px;
@@ -978,6 +1002,8 @@ img {
           top: 184px; }
         .rooms .room__subtitle--md {
           top: 250px; }
+        .rooms .room__subtitle--lg {
+          top: 353px; }
     .restaurant {
       min-height: 800px;
       padding-top: 217px; }
