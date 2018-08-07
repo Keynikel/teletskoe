@@ -124,11 +124,10 @@
 
     &--family {
       @media (min-width: $screen-lg) {
-        cursor: pointer;
         width: 320px;
         height: 340px;
         top: 21px;
-        left: 70px;
+        left: 90px;
       }
 
       @media (min-width: $screen-xl) {
@@ -172,10 +171,9 @@
 
     &--kedr {
       @media (min-width: $screen-lg) {
-        cursor: pointer;
         width: 410px;
         top: 401px;
-        left: -20px;
+        left: 0px;
       }
 
       &:after {
@@ -216,11 +214,10 @@
 
     &--kedr-half {
       @media (min-width: $screen-lg) {
-        cursor: pointer;
         width: 320px;
         height: 420px;
         top: 721px;
-        left: 70px;
+        left: 90px;
       }
 
       &:after {
@@ -263,11 +260,10 @@
 
     &--lux {
       @media (min-width: $screen-lg) {
-        cursor: pointer;
         width: 410px;
         height: 620px;
         top: 81px;
-        right: -21px;
+        right: 0px;
       }
 
       &:after {
@@ -310,11 +306,10 @@
 
     &--std {
       @media (min-width: $screen-lg) {
-        cursor: pointer;
         width: 410px;
         height: 260px;
         top: 752px;
-        right: -21px;
+        right: 0px;
       }
 
       &:after {
