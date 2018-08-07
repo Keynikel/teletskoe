@@ -14,27 +14,31 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+/*
 @font-face {
   font-family: 'Sans_PT';
-  src: url("../fonts/PT_Sans-Web-Regular.ttf") format("ttf");
+  src: url('../fonts/PT_Sans-Web-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
-  font-display: swap; }
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Sans_PT';
-  src: url("../fonts/PT_Sans-Web-Regular.ttf") format("ttf");
+  src: url('../fonts/PT_Sans-Web-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: italic;
-  font-display: swap; }
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Sans_PT';
-  src: url("../fonts/PT_Sans-Web-Bold.ttf") format("ttf");
+  src: url('../fonts/PT_Sans-Web-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
-  font-display: swap; }
-
+  font-display: swap;
+}
+*/
 @font-face {
   font-family: 'Kelson';
   src: url("../fonts/Kelson Sans Bold BG.woff") format("woff");
@@ -42,20 +46,45 @@ body {
   font-style: normal;
   font-display: swap; }
 
+/*
+@font-face {
+  font-family: 'Fira';
+  src: url('../fonts/FiraSans-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira';
+  src: url('../fonts/FiraSans-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira';
+  src: url('../fonts/FiraSans-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*/
 .chrome {
-  background-image: url(../img/sprite-05001502996470113.png);
+  background-image: url(../img/sprite-018428429078069897.png);
   background-position: 0px 0px;
   width: 64px;
   height: 64px; }
 
 .github-logo {
-  background-image: url(../img/sprite-05001502996470113.png);
+  background-image: url(../img/sprite-018428429078069897.png);
   background-position: -68px 0px;
   width: 64px;
   height: 64px; }
 
 .placeholder {
-  background-image: url(../img/sprite-05001502996470113.png);
+  background-image: url(../img/sprite-018428429078069897.png);
   background-position: 0px -68px;
   width: 64px;
   height: 64px; }
@@ -99,7 +128,7 @@ body {
   background-color: #fff;
   margin: 0;
   min-height: 100%;
-  font-family: Sans_PT, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 14px;
   line-height: 1.4;
   color: #000; }
@@ -167,7 +196,7 @@ img {
     font-size: 14px;
     line-height: 1.43;
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center; }
 
 .rooms {
@@ -334,7 +363,7 @@ img {
     font-size: 13px;
     line-height: 1.55;
     text-align: center;
-    font-weight: 400; }
+    font-weight: 300; }
 
 .rests {
   padding: 50px 20px 50px;
@@ -421,7 +450,7 @@ img {
   .rests .rest__lead {
     margin: 0;
     padding-top: 18px;
-    font-size: 11px;
+    font-size: 13px;
     color: #959595;
     font-style: italic;
     text-align: center; }
@@ -669,18 +698,25 @@ img {
         margin-left: auto;
         margin-right: auto;
         min-height: 322px;
-        background-image: url("../img/map--md.png"); }
+        background-image: url("../img/map--md.png");
+        /*  &:after {
+        content: '';
+        position: absolute;
+        width: 520px;
+        height: 210px;
+        bottom: -20px;
+        left: -20px;
+        border: 2px solid $main-color;
+        z-index: -1;
+
+        @media (min-width: $screen-xl) {
+          bottom: -30px;
+          left: -30px;
+        }
+      }
+      */ }
         .contacts__map .ymaps-2-1-68-map {
           height: 320px !important; }
-        .contacts__map:after {
-          content: '';
-          position: absolute;
-          width: 520px;
-          height: 210px;
-          bottom: -20px;
-          left: -20px;
-          border: 2px solid #EE0000;
-          z-index: -1; }
       .contacts__distance h4 {
         padding-bottom: 9px; } }
     @media (min-width: 1000px) {
@@ -723,11 +759,10 @@ img {
       .rooms__item {
         position: absolute; }
       .rooms .room--family {
-        cursor: pointer;
         width: 320px;
         height: 340px;
         top: 21px;
-        left: 70px; }
+        left: 90px; }
       .rooms .room--family:after {
         content: '';
         position: absolute;
@@ -740,10 +775,9 @@ img {
         -webkit-transition: 1s;
         transition: 1s; }
       .rooms .room--kedr {
-        cursor: pointer;
         width: 410px;
         top: 401px;
-        left: -20px; }
+        left: 0px; }
       .rooms .room--kedr:after {
         content: '';
         position: absolute;
@@ -756,11 +790,10 @@ img {
         -webkit-transition: 1s;
         transition: 1s; }
       .rooms .room--kedr-half {
-        cursor: pointer;
         width: 320px;
         height: 420px;
         top: 721px;
-        left: 70px; }
+        left: 90px; }
       .rooms .room--kedr-half:after {
         content: '';
         position: absolute;
@@ -773,11 +806,10 @@ img {
         -webkit-transition: 1s;
         transition: 1s; }
       .rooms .room--lux {
-        cursor: pointer;
         width: 410px;
         height: 620px;
         top: 81px;
-        right: -21px; }
+        right: 0px; }
       .rooms .room--lux:after {
         content: '';
         position: absolute;
@@ -790,11 +822,10 @@ img {
         -webkit-transition: 1s;
         transition: 1s; }
       .rooms .room--std {
-        cursor: pointer;
         width: 410px;
         height: 260px;
         top: 752px;
-        right: -21px; }
+        right: 0px; }
       .rooms .room--std:after {
         content: '';
         position: absolute;
@@ -1058,7 +1089,7 @@ img {
         width: 760px;
         min-height: 400px;
         margin-top: 47px;
-        margin-bottom: 147px;
+        margin-bottom: 55px;
         background-image: url("../img/map--lg.png"); }
         .contacts__map .ymaps-2-1-68-map {
           height: 400px !important; }
@@ -1067,9 +1098,5 @@ img {
           height: 315px;
           bottom: -40px;
           left: -40px; } }
-    @media (min-width: 800px) and (min-width: 1440px) {
-      .contacts__map:after {
-        bottom: -30px;
-        left: -30px; } }
 
 /*# sourceMappingURL=style.css.map */
