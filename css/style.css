@@ -43,19 +43,19 @@ body {
   font-display: swap; }
 
 .chrome {
-  background-image: url(../img/sprite-09458909780301177.png);
+  background-image: url(../img/sprite-05001502996470113.png);
   background-position: 0px 0px;
   width: 64px;
   height: 64px; }
 
 .github-logo {
-  background-image: url(../img/sprite-09458909780301177.png);
+  background-image: url(../img/sprite-05001502996470113.png);
   background-position: -68px 0px;
   width: 64px;
   height: 64px; }
 
 .placeholder {
-  background-image: url(../img/sprite-09458909780301177.png);
+  background-image: url(../img/sprite-05001502996470113.png);
   background-position: 0px -68px;
   width: 64px;
   height: 64px; }
@@ -99,7 +99,7 @@ body {
   background-color: #fff;
   margin: 0;
   min-height: 100%;
-  font-family: -apple-system, Sans_PT, sans-serif;
+  font-family: Sans_PT, sans-serif;
   font-size: 14px;
   line-height: 1.4;
   color: #000; }
@@ -176,7 +176,7 @@ img {
     position: relative;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, Kelson, sans-serif;
+    font-family: Kelson, sans-serif;
     font-size: 32px;
     text-transform: uppercase;
     text-align: center;
@@ -249,7 +249,7 @@ img {
           -ms-flex-order: 2;
               order: 2; }
     .rooms .room__title {
-      font-family: -apple-system, Kelson, sans-serif;
+      font-family: Kelson, sans-serif;
       position: relative;
       margin: 0;
       padding-bottom: 7px;
@@ -307,7 +307,7 @@ img {
     position: relative;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, Kelson, sans-serif;
+    font-family: Kelson, sans-serif;
     font-size: 32px;
     text-transform: uppercase;
     text-align: center;
@@ -346,7 +346,7 @@ img {
     position: relative;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, Kelson, sans-serif;
+    font-family: Kelson, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -405,7 +405,7 @@ img {
     position: relative;
     margin: 0;
     padding-bottom: 3px;
-    font-family: -apple-system, Kelson, sans-serif;
+    font-family: Kelson, sans-serif;
     font-size: 15px;
     text-align: center;
     text-transform: uppercase; }
@@ -1056,6 +1056,7 @@ img {
         font-size: 35px; }
       .contacts__map {
         width: 760px;
+        min-height: 400px;
         margin-top: 47px;
         margin-bottom: 147px;
         background-image: url("../img/map--lg.png"); }
@@ -1068,7 +1069,7 @@ img {
           left: -40px; } }
     @media (min-width: 800px) and (min-width: 1440px) {
       .contacts__map:after {
-        bottom: -108px;
+        bottom: -30px;
         left: -30px; } }
 
 /*# sourceMappingURL=style.css.map */
