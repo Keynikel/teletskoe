@@ -3,17 +3,28 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .contacts {
-  padding-top: 55px;
-  padding-bottom: 95px;
+  padding-top: 40px;
+  padding-bottom: 0;
 
   @media (min-width: $screen-md) {
+    padding-top: 55px;
     font-size: 25px;
     padding-bottom: 118px;
+
+    background-image: url('../img/bg--contacts-md.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $screen-lg) {
-    padding-top: 88px;
+    padding-top: 85px;
     padding-bottom: 114px;
+
+    background-image: url('../img/bg--contacts--lg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $screen-xl) {
@@ -32,21 +43,6 @@
     text-align: center;
     padding-bottom: 1px;
 
-    @media (min-width: $screen-md) {
-      font-size: 25px;
-      padding-bottom: 9px
-    }
-
-    @media (min-width: $screen-lg) {
-      font-size: 38px;
-      line-height: 0.8;
-      padding-bottom: 13px;
-    }
-
-    @media (min-width: $screen-xl) {
-      font-size: 35px;
-    }
-
     &::after {
       content: '';
       position: absolute;
@@ -62,10 +58,44 @@
         width: 60px;
       }
     }
+
+    &--reserve {
+      padding-bottom: 7px;
+      margin-bottom: 20px;
+
+      &::after {
+        margin-left: -30px;
+        width: 60px;
+
+        @media (min-width: $screen-md) {
+          margin-left: -30px;
+          width: 60px;
+        }
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 25px;
+      margin-left: 20px;
+      margin-bottom: 27px;
+      padding-bottom: 10px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 38px;
+      line-height: 0.8;
+      padding-bottom: 13px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 35px;
+    }
+
+
   }
 
   &__text {
-    margin-top: 17px;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     font-size: 13px;
@@ -87,11 +117,68 @@
     }
   }
 
+  &__reserve-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    p {
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 14px;
+      padding-left: 150px;
+      padding-right: 150px;
+      margin-bottom: 50px;
+
+      .contacts__lead {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+      padding-left: 250px;
+      padding-right: 250px;
+      margin-bottom: 100px;
+
+      .contacts__lead {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__reserve {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 14px;
+    text-align: center;
+
+    a {
+      color: $main-color;
+      text-decoration: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 24px;
+      font-size: 16px;
+    }
+  }
+
+  &__lead {
+    margin-bottom: 20px;
+  }
+
   &__map {
     position: relative;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     min-height: 210px;
     background-image: url('../img/map.png');
     background-position: center;
@@ -162,9 +249,21 @@
     }
 
   }
-
-
   &__distance {
+    padding-top: 25px;
+    padding-bottom: 70px;
+    background-image: url('../img/bg--contacts.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-md) {
+      background-image: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 14px;
+    }
 
     h4 {
       margin: 0;
@@ -179,7 +278,7 @@
       }
 
       @media (min-width: $screen-lg) {
-        font-size: 14px;
+        font-size: 16px;
         padding-bottom: 13px;
       }
     }
@@ -194,21 +293,5 @@
     }
   }
 
-  &__reserve {
-    margin: 0;
-    margin-top: 18px;
-    font-size: 13px;
-    text-align: center;
-
-    a {
-      color: #000;
-      text-decoration: none;
-    }
-
-    @media (min-width: $screen-lg) {
-      margin-top: 24px;
-      font-size: 15px;
-    }
-  }
 
 }

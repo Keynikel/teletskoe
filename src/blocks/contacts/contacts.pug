@@ -1,6 +1,12 @@
 mixin contacts()
   section.contacts
-    h2.contacts__title Контакты
+    h2.contacts__title.contacts__title--reserve Бронирование номеров
+    div.contacts__reserve-text
+      p.contacts__lead Чтобы забронировать любой из номеров, свяжитесь с нашим администратором: он ответит на все вопросы и поможет с выбором. 
+      p.contacts__reserve Бронирование номеров:&nbsp;
+        a.contacts__phone(href="tel:+79132107068") +7 913 210 70 68
+      p.contacts__email E-mail: contact@chaletele.ru
+    h2.contacts__title Карта проезда
     div.contacts__text
       p Россия, Республика Алтай, Турочакский район, 
       p  пос. Артыбаш, ул. Телецкая, 68
@@ -11,5 +17,3 @@ mixin contacts()
       p от аэропорта г. Горно-Алтайск — 160 км
       p от аэропорта г. Барнаул — 450 км
       p от аэропорта г. Новосибирск — 620 км
-    p.contacts__reserve Бронирование:&nbsp;
-      a.contacts__phone(href="tel:+79132107068") +7 913 210 70 68
