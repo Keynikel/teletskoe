@@ -531,6 +531,7 @@
         .room__subtitle, .room__title {
           display: block;
           transition: 1.5s;
+          z-index: 1;
         }
       }
     }
