@@ -72,19 +72,19 @@ body {
 }
 */
 .chrome {
-  background-image: url(../img/sprite-003840157296818125.png);
+  background-image: url(../img/sprite-05294890424296463.png);
   background-position: 0px 0px;
   width: 64px;
   height: 64px; }
 
 .github-logo {
-  background-image: url(../img/sprite-003840157296818125.png);
+  background-image: url(../img/sprite-05294890424296463.png);
   background-position: -68px 0px;
   width: 64px;
   height: 64px; }
 
 .placeholder {
-  background-image: url(../img/sprite-003840157296818125.png);
+  background-image: url(../img/sprite-05294890424296463.png);
   background-position: 0px -68px;
   width: 64px;
   height: 64px; }
@@ -165,6 +165,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #31426e;
   background-image: url("../img/bg--header.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -329,6 +330,7 @@ img {
 .restaurant {
   min-height: 600px;
   padding-top: 160px;
+  background-color: #0e0e0e;
   background-image: url("../img/bg--restaurant.png");
   background-position: center;
   background-repeat: no-repeat;
