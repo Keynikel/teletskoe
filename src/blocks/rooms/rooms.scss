@@ -505,13 +505,20 @@
         }
       }
 
+      &--md1 {
+
+        @media (min-width: $screen-xl) {
+          top: 200px;
+        }
+      }
+
       &--lg {
         @media (min-width: $screen-lg) {
           top: 255px;
         }
 
         @media (min-width: $screen-xl) {
-          top: 353px;
+          top: 300px;
         }
       }
 
